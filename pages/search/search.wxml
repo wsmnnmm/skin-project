@@ -1,0 +1,21 @@
+<!--pages/search/search.wxml-->
+<text>上传图片识别皮肤病类型：</text>
+
+<view class="container">
+ <image class='image_type' src="{{imagePath}}" mode="aspectFit"
+ bind:tap='chooseImage'></image>
+ <image calss = 'button_type' bind:tap="doClickWork" src="/image/camera.jpg"></image>
+</view>
+
+
+<view class="button-container">
+<button>分类预测</button>
+<button>分割预测</button>
+</view>
+
+<view class="text-container">
+  <view class='view_item'>
+  <text class='text_main'>名称：{{class_name}}</text>
+  <text class='text_son'>相似度：{{prob}}</text>
+  </view>
+</view>

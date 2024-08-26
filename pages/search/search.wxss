@@ -1,0 +1,90 @@
+/* pages/search/search.wxss */
+/*第一个容器的属性*/
+.container view{
+  width: 150px;
+  height: 200px;
+  text-align:center;
+  line-height: 100px;
+}
+/*第一个容器中第一个视图-图片的属性*/
+.container view:nth-child(1){
+  padding: 20rpx; 
+  margin-top: 20rpx;
+  width: 150px;
+  background-color:lightgrey;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  display:flex;
+  /*调整第一个容器中的元素居中对齐*/
+  justify-content:center;
+  align-items: center;
+}
+.button_type{
+  width: 50%;
+  height:20px;
+}
+/*第一个容器中第一个按钮-拍照的属性*/
+.button-container view{
+  width: 100px;
+  height: 100px;
+  text-align:center;
+  line-height: 100px;
+}
+
+.button-container button:nth-child(1){
+  width:100px;
+  background-color:lightgreen;
+  align-items: center;
+}
+
+.button-container{
+  margin-top: 40rpx;
+  justify-content:center;
+}
+/*第二个容器的属性两个预测按钮*/
+.button-container view{
+  width: 120px;
+  height: 100px;
+  text-align:center;
+  line-height: 100px;
+}
+/*第二个容器的属性-第一个预测按钮的属性*/
+.button-container button:nth-child(1){
+  height: 40px;
+  background-color:lightgrey;
+  text-align: center;
+}
+/*第二个容器的属性-第二个预测按钮的属性*/
+.button-container button:nth-child(2){
+  height: 40px;
+  background-color:lightgrey;
+  text-align: center;
+}
+/*第二个容器的属性*/
+.button-container1{
+  margin-top: 30rpx;
+  display:flex;
+  justify-content:center;
+}
+/*第三个容器的视图属性*/
+.text-container view{
+  width: 100px;
+  height: 100px;
+  text-align:center;
+  line-height: 100px;
+}
+
+.text-container text:nth-child(1){
+  width: 50px;
+  height: 100px;
+  text-align: center;
+}
+.text-container{
+  margin-top: 50rpx;
+  justify-content:center;
+}

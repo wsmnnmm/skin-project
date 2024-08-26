@@ -1,0 +1,7 @@
+<!--pages/profile/profile.wxml-->
+<text>pages/profile/profile.wxml</text>
+<view class="container">
+<image  class="image-container"></image>
+<text>User:</text>
+<button>识别历史</button>
+</view>

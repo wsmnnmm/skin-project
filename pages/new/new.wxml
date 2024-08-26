@@ -1,0 +1,27 @@
+<!--pages/new/new.wxml-->
+<text>pages/new/new.wxml</text>
+<view class="main-container">  
+  <view class="row-container">  
+  <!-- 左侧按钮列 -->  
+    <view class="button-container">
+      <button>种类1</button>
+      <button>种类2</button>
+      <button>种类3</button>
+      <button>种类4</button>
+      <button>种类5</button>
+      <button>种类6</button>
+      <button>种类7</button>
+    </view>
+    
+  <!-- 右侧图片和信息列 -->  
+    <view class="image-container">
+      <image class="image"></image>
+      <text class="text-container1">皮肤病名称</text>
+    </view>
+  </view>
+  <!-- 下面皮肤病详细介绍 -->  
+  <view class="info-container">
+    <text class="text-container2">皮肤病详细介绍</text>
+  </view>
+
+</view>

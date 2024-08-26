@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/newskin/newskin",
+    "pages/new/new",
+    "pages/search/search",
+    "pages/profile/profile",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {"pagePath": "pages/new/new",
+        "text":"new"
+      },
+      {"pagePath": "pages/search/search",
+      "text":"预测"
+      },
+      {"pagePath": "pages/profile/profile",
+        "text":"我的"
+      },
+      {"pagePath": "pages/newskin/newskin",
+        "text":"new预测"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
