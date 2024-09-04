@@ -1,36 +1,77 @@
-/* pages/newskin/newskin.wxss */
-.container{
+/* pages/photo/photo.wxss */
+.container1{
   width:100%;
-  height:70%;
+  height:310px;
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}
+.image_shown{
+  width:85%;
+  height:250px;
+}
+.camera_take{
+  width:20%;
+  height:50px;
+  background-size: contain; /* 或者使用contain，根据需要调整 */  
+  background-repeat: no-repeat;  
+  border: none; /* 去除按钮边框 */  
+  padding: 2px; /* 去除内边距 */  
+  cursor: pointer; /* 鼠标悬停时显示指针，提升用户体验 */  
+}
+.button_container2{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height:auto;
+  align-items: center; 
+  align-content: center;
+}
+.button_container2 button:nth-child(1){
+  margin-top: 20px;  
+  margin-left: 30px;
+  padding: 20px;
+  width:45%;
+}
+.button_container2 button:nth-child(2){
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  width:45%;
+}
+
+.text-container1 view{
+  /* width: 50px; */
+  height: 24px;
+  text-align:left;
+  margin-left: 35px;
+  line-height: 24px;
+}
+
+.text-container1 text:nth-child(1){
+  width: 50px;
+  height: 50px;
   text-align: center;
 }
-.container image:nth-child(1){
-background-color: blueviolet;
-}
-.takephoto-container{
-  margin-top: 20px;
-  height:40%;
+.text-container1{
+  margin-top: 50rpx;
+  justify-content:center;
 }
 
-.button-container{
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
-.button-container button:nth-child(1){
-  widows: 75%;
-  background-color: blue;
-}
 
-.button-container button:nth-child(2){
-  width:58%;
-  margin-left:20px;
-  background-color: yellow;
+.text-container2 view{
+  /* width: 100px; */
+  height: 24px;
+  text-align:left;
+  margin-left: 65px;
+  line-height: 24px;
 }
-
-.text-container{
-  display: flex;
-  flex-direction: row;
+.text-container2 text:nth-child(1){
+  width: 50px;
+  height: 24px;
+  text-align: center;
+}
+.text-container2{
+  margin-top: 50rpx;
+  justify-content:center;
 }

@@ -1,5 +1,13 @@
-/* pages/new/new.wxss */
+/* pages/mydata/mydata.wxss *//* pages/new/new.wxss */
+.title{  
+  display: flex;
+  font-size:30px;
+  margin-top:20px;
+  justify-content:center;
+  align-items:center;
+}
 .main-container {  
+  margin-top:20px;
   display: flex;  
   flex-direction: column;/* 子元素水平排列 */
   width: 100%; 
@@ -25,7 +33,7 @@
 }  
 
 .button-container{
-  width: 25%; /* 宽度为父容器的25%，不增长，不缩小 */
+  width: 30%; /* 宽度为父容器的25%，不增长，不缩小 */
   display:flex;
   flex-direction: column;
   /*调整第一个容器中的元素居中对齐*/
@@ -34,50 +42,64 @@
 }
 
 .button-container button:nth-child(1){
+  font-size: 13px;
   width: 100%;
-  background-color: lightseagreen;
+  background-color: lightgray;
+  margin-left: 10px; /* 设置左边距为10像素 */ 
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 .button-container button:nth-child(2){
+  font-size: 13px;
   width: 100%;
   margin-top: 5px; /* 设置上边距为20像素 */  
-  margin-left: 0px; /* 设置左边距为10像素 */ 
-  background-color: lightgrey; 
+  margin-left: 10px; /* 设置左边距为10像素 */ 
+  background-color: lightgray; 
 }
 
 .button-container button:nth-child(3){
   width: 100%;
+  font-size: 13px;
+  padding-left: 11px;
+  padding-right: 11px;
   margin-top: 5px; /* 设置上边距为20像素 */  
-  margin-left: 0px; /* 设置左边距为10像素 */
-  background-color: lightgoldenrodyellow;
+  margin-left: 10px; /* 设置左边距为10像素 */
+  background-color: lightgray;
 }
 
 .button-container button:nth-child(4){
   width: 100%;
+  font-size: 13px;
   margin-top: 5px; /* 设置上边距为20像素 */  
-  margin-left: 0px; /* 设置左边距为10像素 */
-  background-color: yellow;
+  margin-left: 10px; /* 设置左边距为10像素 */
+  background-color: lightgray;
 }
 
 .button-container button:nth-child(5){
   width: 100%;
+  font-size: 13px;
   margin-top: 5px; /* 设置上边距为20像素 */  
-  margin-left: 0px; /* 设置左边距为10像素 */
-  background-color: yellowgreen;
+  margin-left: 10px; /* 设置左边距为10像素 */
+  background-color: lightgray;
 }
 
 .button-container button:nth-child(6){
   width: 100%;
+  padding-left: 11px;
+  padding-right: 11px;
+  font-size: 13px;
   margin-top: 5px; /* 设置上边距为20像素 */  
-  margin-left: 0px; /* 设置左边距为10像素 */
-  background-color: brown;
+  margin-left: 10px; /* 设置左边距为10像素 */
+  background-color: lightgray;
 }
 
 .button-container button:nth-child(7){
   width: 100%;
+  font-size: 13px;
   margin-top: 5px; /* 设置上边距为20像素 */  
-  margin-left: 0px; /* 设置左边距为10像素 */
-  background-color: goldenrod;
+  margin-left: 10px; /* 设置左边距为10像素 */
+  background-color: lightgray;
 }
 
 .image-container view{
@@ -112,4 +134,10 @@ background-color: lightgray;
 
   width:100%;
   height: 40%;
+}
+.text-container3{
+  position: absolute;  
+  font-size: 12px;
+  bottom: 20rpx; /* 根据需要调整 */  
+  right: 20rpx; /* 根据需要调整 */  
 }

@@ -1,13 +1,36 @@
 // pages/profile/profile.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    userInfo:null
+    },
+  login(){
+    wx.navigateTo({
+      url:'//pages/log/log',
+    })
   },
-
+  tuichu(){
+    this.setDaata({
+      userInfo:null,
+    })
+    wx.setStorageSync('user2', null)
+  },
+  goChange(){
+    wx.navigateTo({
+      url: '/pages/history/history',
+    })
+  },
+  onShow(){
+    var user=wx.getStorageSync('user2')
+    console.log('me----',user)
+    if(user&&user.name){
+      this.setData({
+        userInfo:user,
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

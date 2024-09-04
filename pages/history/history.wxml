@@ -1,0 +1,4 @@
+<!--pages/history/history.wxml-->
+<text>pages/history/history.wxml</text>
+
+<navigator  open-type="navigateBack" delta="1">返回</navigator>

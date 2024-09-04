@@ -1,27 +1,30 @@
 <!--pages/new/new.wxml-->
-<text>pages/new/new.wxml</text>
+<text class="title">皮肤病变科普：</text>
 <view class="main-container">  
   <view class="row-container">  
   <!-- 左侧按钮列 -->  
     <view class="button-container">
-      <button>种类1</button>
-      <button>种类2</button>
-      <button>种类3</button>
-      <button>种类4</button>
-      <button>种类5</button>
-      <button>种类6</button>
-      <button>种类7</button>
+      <button bindtap="changeContent" data-id="1">光化性角化病</button>
+      <button bindtap="changeContent" data-id="2">基底细胞癌</button>
+      <button bindtap="changeContent" data-id="3">良性角化样病变</button>
+      <button bindtap="changeContent" data-id="4">皮肤纤维瘤</button>
+      <button bindtap="changeContent" data-id="5">黑色素瘤</button>
+      <button bindtap="changeContent" data-id="6">血管性皮肤病变</button>
+      <button bindtap="changeContent" data-id="7">黑素细胞痣</button>
     </view>
     
   <!-- 右侧图片和信息列 -->  
     <view class="image-container">
-      <image class="image"></image>
-      <text class="text-container1">皮肤病名称</text>
+      <image class="image" src="{{imageSrc}}" mode="widthFix"></image>
+      <text class="text-container1">{{textContent1}}</text>
     </view>
   </view>
   <!-- 下面皮肤病详细介绍 -->  
   <view class="info-container">
-    <text class="text-container2">皮肤病详细介绍</text>
+    <text class="text-container2">{{textContent}}</text>
   </view>
+</view>
 
+<view>
+  <text class="text-container3">以上信息仅供参考，具体情况请咨询专业医生或专业人士。</text>
 </view>

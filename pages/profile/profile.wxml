@@ -1,7 +1,21 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
-<view class="container">
-<image  class="image-container"></image>
-<text>User:</text>
-<button>识别历史</button>
+<text class="title">个人主页</text>
+<view class="login_root" wx:if="{{userInfo&&userInfo.name}}">
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+  <view>
+  <view class="name">{{userInfo.name}}</view>
+  <view class="tuichu" bindtap="tuichu">退出登录</view>
+</view>
+</view>
+
+<view wx:else class="login_root" bindtap="login">
+<image class="avatar" src="/image/User.jpg"></image>
+<view class="name">点击登录</view>
+</view>
+
+<view wx:if="{{userInfo&&userInfo.name}}">
+<view class="my_item1" bindtap ="goChange">
+<text>修改资料</text>
+<view class="right_arrow"></view>
+</view>
 </view>

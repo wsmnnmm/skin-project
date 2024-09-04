@@ -1,28 +1,53 @@
 /* pages/profile/profile.wxss */
-.container view{
-  width: 100%;
-  height: 100%;
-  text-align:center;
-  line-height: 100px;
-}
-
-.image-container{
-  background-color: lightgray;
-}
-
-.container text{
-  margin-top: 20px;
-}
-
-.container button{
-  margin-top: 20px;
-  background-color: lightgray;
-}
-
-.container{
-  display:flex;
-  flex-direction: column;
-  /*调整第一个容器中的元素居中对齐*/
+.title{  
+  display: flex;
+  font-size:30px;
+  margin-top:20px;
   justify-content:center;
-  align-items: center;
+  align-items:center;
 }
+.login_root{
+  display:flex;
+  padding:50rpx;
+  align-items: center;
+  background: gray;
+}
+
+.avatar{
+  border-radius:50%;
+  width: 180rpx;
+height:180rpx;
+marign-right:30rpx;
+background:gainsboro;
+}
+.name{
+  margin-left: 20rpx;
+  font-size:40rpx;
+  color:white;
+}
+.tuichu{
+  fonr-size:32rpx;
+  color:#FFFFFF;
+  margin-top: 10rpx;
+}
+
+.my_item{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:20rpx;
+  background: white;
+  border-bottom:1px solid gainsboro;
+}
+
+.right_arrow{
+  border:solid black;
+  border-width:0 3px 3px 0;
+  padding:3px;
+  position:absolute;
+  right:15px;
+  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+}
+

@@ -1,30 +1,41 @@
 {
   "pages": [
+    "pages/log/log",
+    "pages/profile/profile",
     "pages/newskin/newskin",
     "pages/new/new",
-    "pages/search/search",
-    "pages/profile/profile",
     "pages/index/index",
+    "pages/history/history",
     "pages/logs/logs"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#efefef"
   },
   "tabBar": {
     "list": [
-      {"pagePath": "pages/new/new",
-        "text":"new"
-      },
-      {"pagePath": "pages/search/search",
-      "text":"预测"
-      },
-      {"pagePath": "pages/profile/profile",
-        "text":"我的"
+      {"pagePath": "pages/log/log",
+        "text":"log",
+        "iconPath": "/image/User.jpg",
+        "selectedIconPath": "/image/User.jpg"
       },
       {"pagePath": "pages/newskin/newskin",
-        "text":"new预测"
+        "text":"new预测",
+        "iconPath": "/image/Heart.jpg",
+        "selectedIconPath": "/image/Heart.jpg"
+      },
+
+      {"pagePath": "pages/new/new",
+        "text":"new",
+        "iconPath": "/image/info.jpg",
+        "selectedIconPath": "/image/info.jpg"
+      },
+      {"pagePath": "pages/profile/profile",
+        "text":"我的",
+        "iconPath": "/image/Home.jpg",
+        "selectedIconPath": "/image/Home.jpg"
       }
     ]
   },
